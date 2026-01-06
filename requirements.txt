@@ -10,8 +10,7 @@ gunicorn==21.2.0
 # HTTP requests (for sync operations)
 requests==2.31.0
 
-# Database
-sqlite3 (built-in)
+# Database (sqlite3 is built-in, no installation needed)
 
 # Utilities
 python-dotenv==1.0.0
