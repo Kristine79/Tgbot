@@ -1,0 +1,73 @@
+# ===========================================
+# .dockerignore для Telegram Crypto Payment Bot
+# Исключает ненужные файлы из Docker-образа
+# ===========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Documentation
+README.md
+README_*.md
+docs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.docker/
+
+# Railway
+railway.json
+Procfile
+.env.production
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.temp
