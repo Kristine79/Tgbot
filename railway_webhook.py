@@ -84,8 +84,9 @@ def main():
         logger.warning("   Не удалось получить информацию о приложении")
     
     # Запуск сервера
+    # Railway автоматически устанавливает переменную $PORT
     host = os.getenv('LISTEN_HOST', '0.0.0.0')
-    port = int(os.getenv('LISTEN_PORT', '8080'))
+    port = int(os.getenv('PORT', os.getenv('LISTEN_PORT', '8080')))
     
     logger.info("=" * 50)
     logger.info(f"🌐 Запуск сервера на {host}:{port}")
